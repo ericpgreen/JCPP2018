@@ -1,0 +1,23 @@
+---
+title: "The impact of school support on depression among adolescent orphans: a cluster‐randomized trial in Kenya"
+output:
+  html_document:
+    toc: false
+    toc_float: false
+bibliography: 'data and replication files/reports/orphan.bib'
+csl: vancouver.csl
+---
+
+*From 2011 to 2014, Dr. Hyunsan Cho and colleagues conducted a cluster randomized trial of a school support intervention for orphans in Kenya [@cho:2018]. Eric Green, Eve Puffer, and John Gallis teamed up with Hyunsan to conduct a secondary analysis of the impact of the intervention on mental health. We created this study website to store the data and code used to generate the pre-print [PDF](https://github.com/ericpgreen/JCPP2018/raw/master/data%20and%20replication%20files/reports/manuscript.pdf) of a paper we published in the Journal of Child Psychology and Psychiatry in 2018 (licensed under the [CC-BY license](https://creativecommons.org/licenses/by/4.0/)).*
+
+* * * 
+
+With over 140 million orphans worldwide and 52 million in Africa alone [@unicef:2017], identifying strategies for promoting positive developmental outcomes is a public health imperative. In Sub-Saharan Africa, orphans often face challenges at multiple levels, including elevated risk of living in poverty, having less stable caregiving, lacking access to education, experiencing mental and physical health problems, and even acquiring HIV [@cluver:2007;@morantz:2013]. This constellation of risk factors calls for evidence-based intervention approaches that can improve multiple outcomes simultaneously while making the most efficient use of limited resources. 
+
+The objective of this study was to determine if a school support intervention for adolescent orphans in Kenya had effects on mental health, a secondary outcome. In this paper, we analyzed data from a four-year cluster-randomized trial of a school support intervention (school uniforms, school fees, and nurse visits) conducted with orphaned adolescents in Siaya County, western Kenya, who were about to transition to secondary school [@cho:2017;@cho:2018]. As the intervention had positive impacts on school dropout and some HIV risk behaviors such as male circumcision and transactional sex [@cho:2017;@cho:2018], we wanted to investigate whether it had an additional benefit for adolescents' mental health. 
+
+In the original study, 26 primary schools were randomized (1:1) to intervention (410 students) or control (425 students) arms. The study was longitudinal with annual repeated measures collected over four years from 2011 to 2014. We administered 5 items from the 20-item Center for Epidemiologic Studies Depression Scale Revised, a self-reported depression screening instrument. 
+
+We find that the intervention prevented depression severity scores from increasing over time among adolescents recruited from intervention schools. There was no evidence of treatment heterogeneity by gender or baseline depression status. The intervention effect on depression was partially mediated by higher levels of continuous school enrollment among the intervention group, but this mediated effect was small. School support for orphans may help to buffer against the onset or worsening of depression symptoms over time, promoting resilience among an important at-risk population.
+
+# References

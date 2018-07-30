@@ -1,0 +1,35 @@
+name: The impact of school support on depression among adolescent orphans
+output_dir: '.'
+navbar:
+  title: School Support and Depression
+  type: inverse
+  left:
+  - text: Home
+    href: index.html
+  - text: Overview
+    href: overview.html
+  - text: Papers
+    menu:
+    - text: JCPP
+      href: jcpp.html
+  - text: Data and Code
+    href: "https://github.com/ericpgreen/JCPP2018/tree/master/data%20and%20replication%20files"
+    icon: fa-external-link
+  right:
+  - icon: fa-envelope-o
+    href: mailto:eric.green@duke.edu
+  - icon: fa-github
+    href: https://github.com/ericpgreen/JCPP2018
+output:
+  html_document:
+    theme: yeti
+    highlight: tango
+    fig_caption: yes
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+    css: styles.css
+    lib_dir: site_libs
+    self_contained: no
+

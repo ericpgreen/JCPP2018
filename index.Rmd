@@ -1,0 +1,20 @@
+---
+title: "School Support and Depression"
+output:
+  html_document:
+    toc_float: false
+---
+
+```{r, include=FALSE}
+  library(knitr)
+  library(kableExtra)
+  library(magrittr)
+  library(tidyverse)
+```
+
+![](img/school.jpg)
+
+<center>
+Photo credit: [gpforeducation on Flickr](https://flic.kr/p/XnUuXv). "Students sweep the schoolyard before the start of classes. Mwangala Primary School, Mombasa County, Kenya April 2017. GPE/Kelley Lynch."
+</center>
+

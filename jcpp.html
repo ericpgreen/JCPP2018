@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>The impact of school support on depression among adolescent orphans: a cluster‐randomized trial in Kenya</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">School Support and Depression</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="overview.html">Overview</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="jcpp.html">JCPP</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="https://github.com/ericpgreen/JCPP2018/tree/master/data%20and%20replication%20files">
+    <span class="fa fa-external-link"></span>
+     
+    Data and Code
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:eric.green@duke.edu">
+    <span class="fa fa-envelope-o"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ericpgreen/JCPP2018">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">The impact of school support on depression among adolescent orphans: a cluster‐randomized trial in Kenya</h1>
+
+</div>
+
+
+<div id="metadata" class="section level1">
+<h1>Metadata</h1>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Element
+</th>
+<th style="text-align:left;">
+Details
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Paper Citation
+</td>
+<td style="text-align:left;">
+Green, E. P., Cho, H. , Gallis, J. and Puffer, E. S. (2018), The impact of school support on depression among adolescent orphans: a cluster‐randomized trial in Kenya. <em>Journal of Child Psychology and Psychiatry</em>. doi: 10.1111/jcpp.12955
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Journal Copy
+</td>
+<td style="text-align:left;">
+<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/jcpp.12955">Journal of Child Psychology and Psychiatry</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Pre-Print
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/ericpgreen/JCPP2018/raw/master/data%20and%20replication%20files/reports/manuscript.pdf">PDF</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Data Citation
+</td>
+<td style="text-align:left;">
+Cho, H. (2018). School support and depression 2018 data repository. <a href=""><img src="" alt="DOI" /></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
+<p>The objective of this study was to determine if a school support intervention for adolescent orphans in Kenya had effects on mental health, a secondary outcome. In this paper, we analyzed data from a four-year cluster-randomized trial of a school support intervention (school uniforms, school fees, and nurse visits) conducted with orphaned adolescents in Siaya County, western Kenya, who were about to transition to secondary school <span class="citation">[1,2]</span>. As the intervention had positive impacts on school dropout and some HIV risk behaviors such as male circumcision and transactional sex <span class="citation">[1,2]</span>, we wanted to investigate whether it had an additional benefit for adolescents’ mental health.</p>
+<p>In the original study, 26 primary schools were randomized (1:1) to intervention (410 students) or control (425 students) arms. The study was longitudinal with annual repeated measures collected over four years from 2011 to 2014. We administered 5 items from the 20-item Center for Epidemiologic Studies Depression Scale Revised, a self-reported depression screening instrument.</p>
+<p>We find that the intervention prevented depression severity scores from increasing over time among adolescents recruited from intervention schools. There was no evidence of treatment heterogeneity by gender or baseline depression status. The intervention effect on depression was partially mediated by higher levels of continuous school enrollment among the intervention group, but this mediated effect was small.</p>
+</div>
+<div id="key-take-aways" class="section level1">
+<h1>Key Take-Aways</h1>
+<p>The results of this study contribute to the scarce literature on the impact of school support interventions on orphan mental health in a low-income setting. Through an experimental design and longitudinal data collection, we found that an intervention consisting of direct fee payments to schools, uniforms, and nurse visits prevented depression severity scores from increasing over time among adolescents recruited from intervention schools. There was no evidence of treatment heterogeneity by gender or baseline depression status.</p>
+<p>We interpret these results to suggest that school support may buffer against the onset or worsening of depression symptoms over time, promoting resilience among an important at-risk population. The framework of toxic stress <span class="citation">[3]</span> suggests that early adversities, common among orphans in LMICs, can have lasting impacts on mental health, so these orphans are at high risk for developing depression and experiencing persistent depression throughout adulthood. Results of this study show that the intervention may have helped to buffer these long-term effects, shifting the trajectory that these adolescents were on in the absence of inserting this important protective factor of education.</p>
+<p>That said, more work remains to understand the mechanism of action of school support on mental health. One interesting finding is that the buffering effect of the intervention was incremental. This could reflect mounting pressures on control students not shared by intervention students. For instance, difficulty paying secondary school fees is a major source of stress for orphaned students in low-income countries that can accumulate over time <span class="citation">[4,5]</span>. It is possible that control students experienced increasing stress as they struggled to remain enrolled, whereas intervention students were spared this particular stressor due to the education guarantees of the program. Another stressor that disproportionately affected control students over time was drop out. Aside from the financial stress of paying school fees, control students had to cope with the loss of enrollment at a higher rate compared to the intervention students. As originally reported in <span class="citation">[1]</span>, the intervention reduced the odds of drop out by 59%. In the current analysis, we found that the intervention effect on depression was partially mediated by higher levels of continuous school enrollment among the intervention group, but this mediated effect was small.</p>
+<p>We can anchor these results in the broader literature about child and adolescent mental health treatment in LMICs. On one end of the spectrum sit economic interventions that are designed to improve quality of life and human capital and could have indirect effects on mental health. These include the school support program we tested, other conditional cash transfer programs that make support contingent upon certain actions of beneficiaries (e.g., <span class="citation">[6]</span>; <span class="citation">[7]</span>; <span class="citation">[8]</span>; <span class="citation">[9]</span>; <span class="citation">[10]</span>), and unconditional cash transfer programs (e.g., <span class="citation">[11]</span>; <span class="citation">[12]</span>; <span class="citation">[8]</span>). These programs are most often run with poor and potentially vulnerable populations like orphans, but not clinical samples identified because of a pre-existing condition like depression. On the other end of the spectrum are individual and group treatments for depression, anxiety, and post-traumatic stress disorder.</p>
+<p>Among the published economic interventions that have assessed mental health outcomes among children and adolescents, most standardized point estimates of the treatment effect are in the 0 to .20 range (this study found an effect size of 0.28. See Table A3 in the Appendix for a comparison of effect sizes across studies. <span class="citation">[13]</span> reviewed the results of 21 trials of treatments for depression, anxiety, and post-traumatic stress disorder conducted with children and adolescents in LMICs. 15 of these trials were conducted in conflict-affected settings. Among the studies conducted in conflict-affected settings with clinical populations, standardized point estimates range from nearly 0 to 0.61 (median 0.22). Therefore, it seems reasonable to conclude that economic interventions could play an important role in improving mental health outcomes as we continue to expand access to direct treatment options in low-resource settings.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-cho:2017">
+<p>[1] Cho H, Ryberg RC, Hwang K, Pearce LD, Iritani BJ. A school support intervention and educational outcomes among orphaned adolescents: Results of a cluster randomized controlled trial in Kenya. Prevention Science 2017;18:943–54.</p>
+</div>
+<div id="ref-cho:2018">
+<p>[2] Cho H, Mbai I, Luseno WK, Hobbs M, Halpern C, Hallfors DD. School support as structural hiv prevention for adolescent orphans in western kenya. Journal of Adolescent Health 2018;62:44–51.</p>
+</div>
+<div id="ref-shonkoff:2012">
+<p>[3] Shonkoff JP, Garner AS, Siegel BS, Dobbins MI, Earls MF, McGuinn L, et al. The lifelong effects of early childhood adversity and toxic stress. Pediatrics 2012;129:e232–46.</p>
+</div>
+<div id="ref-dorsey:2015">
+<p>[4] Dorsey S, Lucid L, Murray L, Bolton P, Itemba D, Manongi R, et al. A qualitative study of mental health problems among orphaned children and adolescents in tanzania. The Journal of Nervous and Mental Disease 2015;203:864.</p>
+</div>
+<div id="ref-cluver:2007">
+<p>[5] Cluver L, Gardner F, Operario D. Psychological distress amongst AIDS-orphaned children in urban South Africa. Journal of Child Psychology and Psychiatry 2007;48:755–63.</p>
+</div>
+<div id="ref-han:2013">
+<p>[6] Han C-K, Ssewamala FM, Wang JS-H. Family economic empowerment and mental health among AIDS-affected children living in AIDS-impacted communities: Evidence from a randomised evaluation in southwestern Uganda. Journal of Epidemiology and Community Health 2013;67:225–30.</p>
+</div>
+<div id="ref-fernald:2009">
+<p>[7] Fernald LC, Gertler PJ, Neufeld LM. 10-year effect of Oportunidades, Mexico’s conditional cash transfer programme, on child growth, cognition, language, and behaviour: A longitudinal follow-up study. The Lancet 2009;374:1997–2005.</p>
+</div>
+<div id="ref-baird:2013">
+<p>[8] Baird S, De Hoop J, Özler B. Income shocks and adolescent mental health. Journal of Human Resources 2013;48:370–403.</p>
+</div>
+<div id="ref-ozer:2009">
+<p>[9] Ozer EJ, Fernald LC, Manley JG, Gertler PJ. Effects of a conditional cash transfer program on children’s behavior problems. Pediatrics 2009;123:e630–7.</p>
+</div>
+<div id="ref-green:2016">
+<p>[10] Green E, Blattman C, Jamison J, Annan J. Does poverty alleviation decrease depression symptoms in post-conflict settings? A cluster-randomized trial of microenterprise assistance in Northern Uganda. Global Mental Health 2016;3.</p>
+</div>
+<div id="ref-kilburn:2016">
+<p>[11] Kilburn K, Thirumurthy H, Halpern CT, Pettifor A, Handa S. Effects of a large-scale unconditional cash transfer program on mental health outcomes of young people in Kenya. Journal of Adolescent Health 2016;58:223–9.</p>
+</div>
+<div id="ref-paxson:2010">
+<p>[12] Paxson C, Schady N. Does money matter? The effects of cash transfers on child development in rural Ecuador. Economic Development and Cultural Change 2010;59:187–229.</p>
+</div>
+<div id="ref-yatham:2017">
+<p>[13] Yatham S, Sivathasan S, Yoon R, Silva TL da, Ravindran AV. Depression, anxiety, and post-traumatic stress disorder among youth in low and middle income countries: A review of prevalence and treatment interventions. Asian Journal of Psychiatry 2017.</p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

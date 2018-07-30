@@ -1,0 +1,49 @@
+---
+title: "The impact of school support on depression among adolescent orphans: a cluster‐randomized trial in Kenya"
+output:
+  html_document:
+    toc_float: true
+bibliography: 'data and replication files/reports/orphan.bib'
+csl: vancouver.csl
+---
+
+# Metadata
+
+```{r, echo=FALSE}
+  tbl <- data.frame(Element=c("Paper Citation", 
+                              "Journal Copy", 
+                              "Pre-Print", 
+                              "Data Citation"),
+                    Details=c("Green, E. P., Cho, H. , Gallis, J. and Puffer, E. S. (2018), The impact of school support on depression among adolescent orphans: a cluster‐randomized trial in Kenya. *Journal of Child Psychology and Psychiatry*. doi: 10.1111/jcpp.12955",
+                              "[Journal of Child Psychology and Psychiatry](https://onlinelibrary.wiley.com/doi/pdf/10.1111/jcpp.12955)",
+                              "[PDF](https://github.com/ericpgreen/JCPP2018/raw/master/data%20and%20replication%20files/reports/manuscript.pdf)",
+                              "Cho, H. (2018). School support and depression 2018 data repository. [![DOI]()]()"))
+
+tbl %>%
+  kable("html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", 
+                                      "condensed", "responsive")) %>%
+  column_spec(1, width = "10em")
+```
+
+# Summary
+
+The objective of this study was to determine if a school support intervention for adolescent orphans in Kenya had effects on mental health, a secondary outcome. In this paper, we analyzed data from a four-year cluster-randomized trial of a school support intervention (school uniforms, school fees, and nurse visits) conducted with orphaned adolescents in Siaya County, western Kenya, who were about to transition to secondary school [@cho:2017;@cho:2018]. As the intervention had positive impacts on school dropout and some HIV risk behaviors such as male circumcision and transactional sex [@cho:2017;@cho:2018], we wanted to investigate whether it had an additional benefit for adolescents' mental health. 
+
+In the original study, 26 primary schools were randomized (1:1) to intervention (410 students) or control (425 students) arms. The study was longitudinal with annual repeated measures collected over four years from 2011 to 2014. We administered 5 items from the 20-item Center for Epidemiologic Studies Depression Scale Revised, a self-reported depression screening instrument. 
+
+We find that the intervention prevented depression severity scores from increasing over time among adolescents recruited from intervention schools. There was no evidence of treatment heterogeneity by gender or baseline depression status. The intervention effect on depression was partially mediated by higher levels of continuous school enrollment among the intervention group, but this mediated effect was small.
+
+# Key Take-Aways
+
+The results of this study contribute to the scarce literature on the impact of school support interventions on orphan mental health in a low-income setting. Through an experimental design and longitudinal data collection, we found that an intervention consisting of direct fee payments to schools, uniforms, and nurse visits prevented depression severity scores from increasing over time among adolescents recruited from intervention schools. There was no evidence of treatment heterogeneity by gender or baseline depression status.
+
+We interpret these results to suggest that school support may buffer against the onset or worsening of depression symptoms over time, promoting resilience among an important at-risk population. The framework of toxic stress [@shonkoff:2012] suggests that early adversities, common among orphans in LMICs, can have lasting impacts on mental health, so these orphans are at high risk for developing depression and experiencing persistent depression throughout adulthood. Results of this study show that the intervention may have helped to buffer these long-term effects, shifting the trajectory that these adolescents were on in the absence of inserting this important protective factor of education.
+
+That said, more work remains to understand the mechanism of action of school support on mental health. One interesting finding is that the buffering effect of the intervention was incremental. This could reflect mounting pressures on control students not shared by intervention students. For instance, difficulty paying secondary school fees is a major source of stress for orphaned students in low-income countries that can accumulate over time [@dorsey:2015; @cluver:2007]. It is possible that control students experienced increasing stress as they struggled to remain enrolled, whereas intervention students were spared this particular stressor due to the education guarantees of the program. Another stressor that disproportionately affected control students over time was drop out. Aside from the financial stress of paying school fees, control students had to cope with the loss of enrollment at a higher rate compared to the intervention students. As originally reported in @cho:2017, the intervention reduced the odds of drop out by 59%. In the current analysis, we found that the intervention effect on depression was partially mediated by higher levels of continuous school enrollment among the intervention group, but this mediated effect was small.
+
+We can anchor these results in the broader literature about child and adolescent mental health treatment in LMICs. On one end of the spectrum sit economic interventions that are designed to improve quality of life and human capital and could have indirect effects on mental health. These include the school support program we tested, other conditional cash transfer programs that make support contingent upon certain actions of beneficiaries (e.g., @han:2013; @fernald:2009; @baird:2013; @ozer:2009; @green:2016), and unconditional cash transfer programs (e.g., @kilburn:2016; @paxson:2010; @baird:2013). These programs are most often run with poor and potentially vulnerable populations like orphans, but not clinical samples identified because of a pre-existing condition like depression. On the other end of the spectrum are individual and group treatments for depression, anxiety, and post-traumatic stress disorder.
+
+Among the published economic interventions that have assessed mental health outcomes among children and adolescents, most standardized point estimates of the treatment effect are in the 0 to .20 range (this study found an effect size of 0.28. See Table A3 in the Appendix for a comparison of effect sizes across studies. @yatham:2017 reviewed the results of 21 trials of treatments for depression, anxiety, and post-traumatic stress disorder conducted with children and adolescents in LMICs. 15 of these trials were conducted in conflict-affected settings. Among the studies conducted in conflict-affected settings with clinical populations, standardized point estimates range from nearly 0 to 0.61 (median 0.22). Therefore, it seems reasonable to conclude that economic interventions could play an important role in improving mental health outcomes as we continue to expand access to direct treatment options in low-resource settings.
+
+# References
