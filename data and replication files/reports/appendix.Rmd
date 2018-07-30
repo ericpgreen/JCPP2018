@@ -1,0 +1,36 @@
+\newpage
+
+```{r, results='asis'}
+  names(alpha) <- c("Round",
+                    "N (complete cases)",
+                    "Cronbach's Alpha",
+                    "Lower 95% CI",
+                    "Upper 95% CI")
+  
+  kable(alpha, format = "latex", booktabs = TRUE,
+        caption="\\label{alpha}Estimates of internal consistency reliability for the 5-item CESD-R scale score by round.",
+        digits=c(0,0,2,2,2))
+```
+
+```{r, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+  texreg(list(m1, m2, m3), ci.force=TRUE, 
+         custom.model.names=c("treat x time", 
+                              "treat x time x female",
+                              "treat x time x depBase"),
+         caption = "\\label{m123}Conditional growth models for depression severity (standardized)",
+         #float.pos = "p!",
+         caption.above=T,
+         label="m123",
+         custom.note = "%stars. Fixed effect of time treated as factor.",
+         scalebox = 0.4) # file="output/tables/m123.tex")
+```
+
+\newpage
+
+\begin{figure}
+\vspace*{-4em}
+\centering
+\includegraphics[angle=90, origin=c, scale=1.7]{effects.pdf} %
+\label{fig:effects}
+\end{figure}
+
