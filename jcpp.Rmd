@@ -13,11 +13,13 @@ csl: vancouver.csl
   tbl <- data.frame(Element=c("Paper Citation", 
                               "Journal Copy", 
                               "Pre-Print", 
-                              "Data Citation"),
+                              "Data Citation",
+                              "Supplemental"),
                     Details=c("Green, E. P., Cho, H. , Gallis, J. and Puffer, E. S. (2018), The impact of school support on depression among adolescent orphans: a cluster‐randomized trial in Kenya. *Journal of Child Psychology and Psychiatry*. doi: 10.1111/jcpp.12955",
                               "[Journal of Child Psychology and Psychiatry](https://onlinelibrary.wiley.com/doi/pdf/10.1111/jcpp.12955)",
                               "[PDF](https://github.com/ericpgreen/JCPP2018/raw/master/data%20and%20replication%20files/reports/manuscript.pdf)",
-                              "Cho, H. (2018). School support and depression 2018 data repository. [![DOI](https://zenodo.org/badge/142767827.svg)](https://zenodo.org/badge/latestdoi/142767827)"))
+                              "Cho, H. (2018). School support and depression 2018 data repository. [![DOI](https://zenodo.org/badge/142767827.svg)](https://zenodo.org/badge/latestdoi/142767827)",
+                              "[Appendix Table A3: Standardized effect sizes of the impact of economic and psychological interventions on depression](https://docs.google.com/spreadsheets/d/1eFdeFq1uYP_JA9c-xlMVcAQYLx3UeFHkjW2A65zwNAc/edit?usp=sharing)"))
 
 tbl %>%
   kable("html") %>%
